@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mia's Wall | MyBook</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header-wall">
+            <a href="/normal.html"><img src="img/white-mybook.svg" alt="mybook logotype"></a>
+            <nav>
+                <h2><a id="header-logout" href="logout.html">Log out</a></h2>
+            </nav>
+        </header>
+        <main>
+            <!-- profile picture and post box -->
+            <section>
+                <div class="left-side">
+                    <img src="img/big-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                </div>
+                <div class="right-side" id="post-box">
+                    <h1>Mia Cruz</h1>
+                    <h2>What's on your mind?</h2>
+                    <input type="text" placeholder="Type here...">
+                    <button class="add-c"><label class="extrabtn" for="post">Post</label></button>
+                
+                    <input class="modal-state" id="post" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal__bg" for="post"></label>
+                        <div class="modal__inner_xsmall">
+                            <label class="modal__close" for="post"></label>
+                            <h2>Sorry, you've reached the MAX amount of posts for today...</h2>
+                        </div>
+                    </div>
+            </div>
+            </section>
+
+            <!-- Left side -->
+            <!-- links/modals -->
+
+            <!-- Emoticons/text decorations from: https://emojicombos.com/kaomoji and https://www.textartgenerator.net/ -->
+
+            <section id="info-statuses">
+                <div class="left-side">
+                
+                <!-- MODAL CODE FROM https://codepen.io/Idered/pen/DdeoeW -->
+
+                <div class="links">
+                    <h2><label class="btn" for="photos">View Mia's photos</label></h2>
+                
+                    <input class="modal-state" id="photos" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal__bg" for="photos"></label>
+                        <div class="modal__inner_large">
+                            <label class="modal__close" for="photos"></label>
+                            <h2>Mia's super cool photos 8-)</h2>
+
+                            <img src="img/monterey_resize.jpg" alt="Mia in Monterey"/>
+                            <p>spring break was so fun ☺☼</p>
+                            <img src="img/bdaycake.jpg" alt="birthday cake that says 'Happy Birthday Mia'">
+                            <p>my birthday cake!!! thx tita</p>
+                            <img src="img/madi-mia-kami.png" alt="Mia with her cousins Madison and Kami">
+                            <p>*ੈ✩‧₊˚. • °˗ˏˋcousins´ˎ˗*ੈ✩‧₊˚.✧</p>
+                        </div>
+                    </div>
+
+
+                    <h2><label class="btn" for="poke">Poke Mia!</label></h2>
+                
+                    <input class="modal-state" id="poke" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal__bg" for="poke"></label>
+                        <div class="modal__inner">
+                            <label class="modal__close" for="poke"></label>
+                            <h2>⚠️ POKE WAR STARTED ⚠️<br>
+                            AHHH!!! :O</h2>
+                            <img id="pokepic" src="img/greenpoke.png" alt="poke artwork">
+                        </div>
+                    </div>
+
+                    <h2><label class="btn" for="message">Message Mia</label></h2>
+                
+                    <input class="modal-state" id="message" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal__bg" for="message"></label>
+                        <div class="modal__inner_medium">
+                            <label class="modal__close" for="message"></label>
+                            <h2>Message Mia Cruz</h2>
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <p>Mia Cruz • IDLE</p>
+                            <p>“doing hw!!! i’ll msg you back ASAP :p” • 7:47 PM</p>
+                            <input class="msg-field" type="text" placeholder="Type here...">
+                            <button><label class="btn" for="send">Send</label></button>
+                
+                    <input class="modal-state" id="send" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal__bg" for="send"></label>
+                        <div class="modal__inner_xsmall">
+                            <label class="modal__close" for="send"></label>
+                            <h2>Sent!</h2>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+            </div>
+    
+                <!-- about Mia panel -->
+                    <div id="about">
+                        <h2>About Mia</h2>
+                        <p>Birthday:<br> October 23, 1993</p>
+                        <p>Hometown:<br> San Ramon, CA</p>
+                        <p>Education:<br>
+                        Twin Creeks Elementary School<br>
+                        Hogwarts School of Witchcraft and Wizardry
+                        </p>
+                        <p>Work:<br>
+                        Krusty Krab in Bikini Bottom
+                        </p>
+                    </div>
+
+                    <button class="add-c"><label class="extrabtn" for="add">Add Mia as a Friend!</label></button>
+                
+                    <input class="modal-state" id="add" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal__bg" for="add"></label>
+                        <div class="modal__inner_small">
+                            <label class="modal__close" for="add"></label>
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p><u>4 mutual friends</u></p><br>
+                            <p>"Thx for adding me!! Friends foreverrrrr :-*"</p>
+                        </div>
+                    </div>
+            </div>
+
+                <!-- Right side -->
+                <!-- statuses -->
+                <div class="right-side">
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>does not want to do her homework >:(</p>
+                        </div>
+                        <div class="info">
+                            <p>5:25 PM, 02/27/2009</p>
+                            <p>1 Like • Comment</p>
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>is reading!!!!!</p>
+                        </div>
+                        <div class="info">
+                            <p>12:03 PM, 02/27/2009</p>
+                            <p>Like • Comment</p>
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>lovessss Harry Potter. ♡♡♡♡♡ and Pokemon!!!!! :o</p>
+                        </div>
+                        <div class="images">
+                            <img src="img/hp-green.jpg" alt="harry potter and hedwig"> 
+                            <img src="img/dawn-green.jpg" alt="dawn and piplup">
+                        </div>
+                        <div class="info">
+                            <p>11:55 AM, 02/27/2009</p>
+                            <p>1 Like • Comment</p>
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>is stressed >:(</p>
+                        </div>
+                        <div class="info">
+                            <p>11:00 PM, 02/26/2009</p>
+                            <p>2 Like • 10 Comment</p>
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>so excited. off of school today. WOOOOOOOOOOOOOOO!OO!O!OO</p>
+                        </div>
+                        <div class="info">
+                            <p>10:23 AM, 02/25/2009</p>
+                            <p>5 Likes • 3 Comment</p>
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>LIKE THIS POST IF YOU LIKE COOKIES<br>
+                            COMMENT ON THIS POST IF YOU LIKE CUPCAKES<br>
+                            [1] liked this post<br>
+                            [2] commented</p>
+                        </div>
+                        <div class="info">
+                            <p>11:11 AM, 02/20/2009</p>
+                            <p>1 Like • 2 Comments</p>
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>is journaling... NO SNOOPING!!!! for my eyes only ಠ_ಠ</p>
+                        </div>
+                            <div class="images">
+                            <img src="img/angry-snoopy.gif" alt="gif of snoopy being angry from https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fangry-snoopy-gifs&psig=AOvVaw1jRJW8nbnuIgi0lNM0wWZD&ust=1678386011020000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCMCEzKT5zP0CFQAAAAAdAAAAABAD">
+                        </div>
+                            <div class="info">
+                            <p>12:45 PM, 02/18/2009</p>
+                            <p>5 Likes • 10 Comments</p>
+                        </div>
+                    </div>
+
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>WE ♡ TSWIZZLE</p>
+                        </div>
+                            <div class="images">
+                            <img src="img/tswift.jpg" alt="Mia holding up Taylor Swift CD with her sister Jesse">
+                        </div>
+                            <div class="info">
+                            <p>6:31 PM, 02/16/2009</p>
+                            <p>10 Likes • 2 Comments</p>
+                        </div>
+                    </div>
+
+                    <div class="status">
+                        <div class="text">
+                            <img src="img/small-pfp.jpg" alt="profile picture of Sailor Jupiter">
+                            <h2>Mia Cruz</h2>
+                            <p>soooo bored UGH ヽ(#`Д´)ﾉ</p>
+                        </div>
+                        <div class="info">
+                            <p>7:01 AM, 02/14/2009</p>
+                            <p>Like • Comment</p>
+                        </div>
+                    </div>
+
+                    <!-- Back to top -->
+
+                    <button class="add-c"><a href="#" class="top">Back to Top</a></button>
+
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&family=Ropa+Sans&display=swap');
+
+/* classic HTML selector tags */
+
+h1{
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 48px;
+    line-height: 51px;
+}
+
+h2{
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    color: #0F1210;
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #0F1210;
+    /* width: 1120px; */
+    margin: 0px auto 80px auto;
+    background-color: #F7FAF8;
+}
+
+main{
+  width: 1120px;
+  margin: auto;
+}
+
+section{
+    margin: 80px 0px 80px 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+    grid-auto-flow: dense;
+}
+
+button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+    border: none;
+    background-color: #DAD7CD;
+    width: 100%;
+    padding: 20px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+a{
+    color:#0F1210;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Classes */
+
+.header-wall{
+    background-color: #588157;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.incognito{
+    background-color: #0F1210;
+}
+
+.field{
+    background-color: #DAD7CD;
+    padding: 20px 10px 20px 10px;
+    width: 96%;
+}
+
+.msg-field{
+  background-color: #DAD7CD;
+  padding: 20px 0px 20px 15px;
+  width: 98%;
+}
+
+.left-side{
+    grid-column: 1 / span 3;
+}
+
+.right-side{
+    grid-column: 4 / span 9;
+}
+
+.login, .verify{
+    grid-column: 4 / span 6;
+    background-color: #A3B18A;
+    height: 310px;
+}
+
+.login{
+  padding: 30px 30px 70px 30px;
+}
+
+.verify{
+  padding: 30px;
+}
+
+.logout{
+    grid-column: 5 / span 4;
+    background-color: #A3B18A;
+    padding: 30px;
+    text-align: center;
+}
+
+.status{
+    background-color: #DAD7CD;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.text, .info{
+    display: flex;
+    gap: 20px;
+}
+
+.text{
+    margin: 10px;
+}
+
+.text p{
+    margin-top: 25px;
+}
+
+.info{
+    margin-left: 120px;
+    margin-top: -30px;
+}
+
+.images{
+    display: block;
+    margin: 20px;
+}
+
+.white{
+    color: #F7FAF8;
+}
+
+.extrabtn{
+    background-color: #A3B18A;
+    cursor: pointer;
+}
+
+.extrabtn a{
+    text-decoration: none;
+}
+
+.extrabtn:hover{
+  text-decoration: underline;
+}
+
+.add-c{
+    background-color: #A3B18A;
+}
+
+button:hover, .add-c:hover{
+  filter: drop-shadow(10px 10px 4px #588157);
+}
+
+.links{
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+input {
+    background-color: #DAD7CD;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: none;
+    width: 95%;
+}
+
+/* IDs */
+
+#about{
+  background-color: #DAD7CD;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+#logo-log{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -40px;
+}
+
+#header-logout{
+  color:#F7FAF8;
+}
+
+#v{
+  margin-bottom: 24px;
+}
+
+#v-text{
+  margin: auto;
+}
+
+#info-statuses{
+  margin-top: -40px;
+}
+
+#info-statuses a{
+  text-decoration: underline;
+}
+
+#post-box{
+  margin-top: -50px;
+}
+
+/* Non-original code */
+
+/* MODAL CODE FROM https://codepen.io/Idered/pen/DdeoeW */
+/* [Object] Modal
+ * =============================== */
+ .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(218, 215, 205, 0.9);
+    transition: opacity .25s ease;
+  }
+  
+  .modal__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .modal-state {
+    display: none;
+  }
+  
+  .modal-state:checked + .modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-state:checked + .modal .modal__inner {
+    top: 0;
+  }
+  
+  .modal__inner, .modal__inner_xsmall, .modal__inner_small, .modal__inner_medium, .modal__inner_large {
+    transition: top .25s ease;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    overflow-y: auto;
+    background: #A3B18A;
+    border-radius: 5px;
+    padding: 1em 2em;
+    height: 50%;
+    text-align: center;
+  }
+
+/* SCROLLBAR CODE from https://codepen.io/stevenlewis/pen/jOKvMx */
+
+  .modal__inner::-webkit-scrollbar, .modal__inner_xsmall::-webkit-scrollbar, .modal__inner_small::-webkit-scrollbar, .modal__inner_medium::-webkit-scrollbar, .modal__inner_large::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.modal__inner::-webkit-scrollbar:vertical, .modal__inner_xsmall::-webkit-scrollbar:vertical, .modal__inner_small::-webkit-scrollbar:vertical, .modal__inner_medium::-webkit-scrollbar:vertical, .modal__inner_large::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.modal__inner::-webkit-scrollbar:horizonta, .modal__inner_xsmall::-webkit-scrollbar:horizontal, .modal__inner_small::-webkit-scrollbar:horizontal, .modal__inner_medium::-webkit-scrollbar:horizontal, .modal__inner_large::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.modal__inner::-webkit-scrollbar-thumb, .modal__inner_xsmall::-webkit-scrollbar-thumb, .modal__inner_small::-webkit-scrollbar-thumb, .modal__inner_medium::-webkit-scrollbar-thumb, .modal__inner_large::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px #A3B18A; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* scrollbar code over */
+
+  .modal__inner_xsmall{
+    height: 10%;
+  }
+
+  .modal__inner_small{
+    height: 40%;
+  }
+
+  .modal__inner_medium{
+    height: 55%;
+  }
+
+  .modal__inner_large{
+    height: 60%;
+  }
+  
+  .modal__close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
+  }
+  
+  .modal__close:after,
+  .modal__close:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5em;
+    background: #0F1210;
+    display: block;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -3px 0 0 -1px;
+    top: 0;
+  }
+  
+  .modal__close:hover:after,
+  .modal__close:hover:before {
+    background: #0F1210;
+  }
+  
+  .modal__close:before {
+    transform: rotate(-45deg);
+  }
+  
+  @media screen and (max-width: 768px) {
+      
+    .modal__inner {
+      width: 90%;
+      height: 90%;
+      box-sizing: border-box;
+    }
+  }
+  
+  
+  /* Modal link triggers */
+  .btn {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .btn:hover{
+    color: #588157;
+  }
+
+/* ANIMATION CODE from https://www.w3schools.com/howto/howto_css_shake_image.asp  */
+
+#pokepic:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+/* BACK TO TOP CODE from https://codepen.io/t_afif/pen/QWqdYYB */
+
+  .top {
+    --offset: 50px; 
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #0F1210;
+    background-color: #A3B18A;
+    white-space: nowrap;
+  }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
